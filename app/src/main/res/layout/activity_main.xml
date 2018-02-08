@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.fabriciohsilva.gasolinaoualcool.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="81dp"
+        android:background="@drawable/logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/preco_alcool"
+        android:textColor="@color/colorTextoPreco" />
+
+    <EditText
+        android:id="@+id/textPrecoAlcool"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorwhite"
+        android:inputType="numberDecimal"
+        android:padding="5dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/prec_gasolina"
+        android:textColor="@color/colorTextoPreco" />
+
+    <EditText
+        android:id="@+id/textPrecoGasolina"
+        android:layout_width="112dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorwhite"
+        android:inputType="numberDecimal"
+        android:padding="5dp" />
+
+    <Button
+        android:id="@+id/buttonComparar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="@string/comparar" />
+
+    <TextView
+        android:id="@+id/textResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        android:textColor="@color/colorTextoPreco" />
+
+</LinearLayout>
